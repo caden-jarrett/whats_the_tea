@@ -3,7 +3,8 @@ class CustomerSubscriptionSerializer
         {
             data: {
                 customer_id: sub.customer_id,
-                subscription_id: sub.subscription_id
+                subscription_id: sub.subscription_id,
+                active: sub.active
             }
         }
     end

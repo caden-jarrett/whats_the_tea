@@ -26,5 +26,6 @@ RSpec.describe "Customer Subscription Creation", type: :request do
         expect(reply[:data]).to be_a Hash
         expect(reply[:data][:customer_id]).to be_a Integer
         expect(reply[:data][:subscription_id]).to be_a Integer
+        expect(reply[:data][:active]).to eq true
     end
 end
