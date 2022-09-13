@@ -66,6 +66,12 @@ GEM
     diff-lcs (1.5.0)
     docile (1.4.0)
     erubi (1.11.0)
+    faker (2.23.0)
+      i18n (>= 1.8.11, < 2)
+    faraday (2.5.2)
+      faraday-net_http (>= 2.0, < 3.1)
+      ruby2_keywords (>= 0.0.4)
+    faraday-net_http (3.0.0)
     ffi (1.15.5)
     globalid (1.0.0)
       activesupport (>= 5.0)
@@ -147,6 +153,7 @@ GEM
       rspec-mocks (~> 3.10)
       rspec-support (~> 3.10)
     rspec-support (3.11.1)
+    ruby2_keywords (0.0.5)
     ruby_dep (1.5.0)
     shoulda-matchers (5.1.0)
       activesupport (>= 5.2.0)
@@ -189,6 +196,8 @@ DEPENDENCIES
   bootsnap (>= 1.1.0)
   byebug
   capybara
+  faker
+  faraday
   listen (>= 3.0.5, < 3.2)
   pg (>= 0.18, < 2.0)
   pry
