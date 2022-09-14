@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/cadenjarrett/independent_challenges/tech_challenges/tell_the_tea/spec/features/create_user_sub_spec.rb": {
+      "/Users/cadenjarrett/independent_challenges/tech_challenges/tell_the_tea/spec/features/cancel_customer_sub_spec.rb": {
         "lines": [
           1,
           null,
@@ -17,17 +17,14 @@
           1,
           null,
           null,
-          null,
           1,
           null,
-          null,
-          null,
-          1,
           null,
           1,
           null,
           1,
-          null,
+          1,
+          1,
           1,
           1,
           1,
@@ -246,6 +243,100 @@
           null,
           1,
           null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/cadenjarrett/independent_challenges/tech_challenges/tell_the_tea/spec/features/create_user_sub_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          3,
+          null,
+          3,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/cadenjarrett/independent_challenges/tech_challenges/tell_the_tea/spec/models/customer_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          2,
+          2,
+          2,
+          null,
+          null,
+          1,
+          null,
+          null,
           null
         ]
       },
@@ -267,10 +358,14 @@
           null
         ]
       },
-      "/Users/cadenjarrett/independent_challenges/tech_challenges/tell_the_tea/app/models/tea.rb": {
+      "/Users/cadenjarrett/independent_challenges/tech_challenges/tell_the_tea/spec/models/subscription_spec.rb": {
         "lines": [
           1,
+          null,
           1,
+          1,
+          null,
+          null,
           null
         ]
       },
@@ -280,7 +375,7 @@
           null
         ]
       },
-      "/Users/cadenjarrett/independent_challenges/tech_challenges/tell_the_tea/app/controllers/customers_subscriptions_controller.rb": {
+      "/Users/cadenjarrett/independent_challenges/tech_challenges/tell_the_tea/spec/models/tea_spec.rb": {
         "lines": [
           1,
           null,
@@ -288,9 +383,43 @@
           1,
           null,
           null,
+          null
+        ]
+      },
+      "/Users/cadenjarrett/independent_challenges/tech_challenges/tell_the_tea/app/models/tea.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/cadenjarrett/independent_challenges/tech_challenges/tell_the_tea/app/controllers/customers_subscriptions_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          3,
+          3,
+          3,
+          1,
+          2,
+          1,
+          null,
+          1,
+          null,
+          null,
           1,
           1,
           null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
           0,
           null,
           null,
@@ -303,20 +432,14 @@
           null
         ]
       },
-      "/Users/cadenjarrett/independent_challenges/tech_challenges/tell_the_tea/app/models/customers_subscriptions.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/cadenjarrett/independent_challenges/tech_challenges/tell_the_tea/app/serializers/customer_subscription_serializer.rb": {
+      "/Users/cadenjarrett/independent_challenges/tech_challenges/tell_the_tea/app/serializers/subscription_serializer.rb": {
         "lines": [
           1,
           1,
           null,
-          1,
+          2,
+          null,
+          null,
           null,
           null,
           null,
@@ -327,6 +450,6 @@
         ]
       }
     },
-    "timestamp": 1663111960
+    "timestamp": 1663171080
   }
 }

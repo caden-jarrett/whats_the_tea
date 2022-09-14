@@ -1,4 +1,5 @@
 class CustomersSubscriptions < ApplicationRecord
-    belongs_to :customer
-    belongs_to :subscription
+    belongs_to :customers, optional: true
+    belongs_to :subscriptions, optional: true
+
 end

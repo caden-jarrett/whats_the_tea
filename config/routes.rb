@@ -3,4 +3,6 @@ Rails.application.routes.draw do
     
   post 'customer_subscriptions', to: 'customers_subscriptions#create'
 
+  post 'customer_subscriptions_cancel', to: 'customers_subscriptions#cancel'
+
 end
