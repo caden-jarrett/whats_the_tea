@@ -1,4 +1,4 @@
-class CustomersSubscriptionsController < ApplicationController
+class SubscriptionsController < ApplicationController
 
     def create 
         customer = Customer.find_by(id: params[:customer_id])
@@ -25,6 +25,17 @@ class CustomersSubscriptionsController < ApplicationController
             render json: SubscriptionSerializer.cancel_format(sub)
         else sub ==  nil
             render json: {error: 'Unknown subscription.'}, status: 400
+        end
+    end
+
+    def all_subs
+        check = Customer.find_by(id: params["customer_id"].to_i)
+        if check != nil
+            cancelled = check.subscriptions.where(status: 'cancelled')
+            active = check.subscriptions.where(status: 'active')
+            render json: SubscriptionSerializer.user_subs(cancelled, active, check)
+        else 
+            render json: {error: 'Unknown Customer ID.'}, status: 400
         end
     end
 end

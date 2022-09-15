@@ -18,7 +18,7 @@ RSpec.describe "Customer Subscription Creation", type: :request do
             price: 25.50
             }
 
-        post '/customer_subscriptions', params:params
+        post '/create_subscriptions', params:params
         
         expect(response.status).to eq 200
 
@@ -42,7 +42,7 @@ RSpec.describe "Customer Subscription Creation", type: :request do
                 tea_id: @tea1.id
                 }
 
-            post '/customer_subscriptions', params:params
+            post '/create_subscriptions', params:params
 
             expect(response.status).to eq 400
 
@@ -58,7 +58,7 @@ RSpec.describe "Customer Subscription Creation", type: :request do
                 subscription_id: 100000000000
                 }
 
-            post '/customer_subscriptions', params:params
+            post '/create_subscriptions', params:params
 
             expect(response.status).to eq 400
 
