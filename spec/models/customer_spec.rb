@@ -9,6 +9,6 @@ RSpec.describe Customer do
     end
 
     describe 'exists and has relationships' do
-        
+        it { should have_many(:subscriptions) } 
     end
 end
