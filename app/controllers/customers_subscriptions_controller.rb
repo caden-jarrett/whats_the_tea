@@ -16,14 +16,15 @@ class CustomersSubscriptionsController < ApplicationController
         end
     end
 
-    def cancel 
-        sub = Subscription.find(params["subscription_id"].to_i)
-        sub.status = 'cancelled'
-        sub.save
-        if sub.status == 'cancelled'
+    def cancel
+        check = Subscription.find_by(id: params["subscription_id"].to_i) 
+        if check 
+            sub = Subscription.find(params["subscription_id"].to_i)
+            sub.status = 'cancelled'
+            sub.save
             render json: SubscriptionSerializer.creation_format(sub)
         else sub ==  nil
-            render json: {error: 'Unknown customer or subscription..'}, status: 400
+            render json: {error: 'Unknown subscription.'}, status: 400
         end
     end
 end

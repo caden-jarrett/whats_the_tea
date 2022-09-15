@@ -25,4 +25,21 @@ RSpec.describe "Customer Subscription Creation", type: :request do
         expect(reply[:data][:tea_id]).to eq @tea1.id
         expect(reply[:data][:status]).to eq 'cancelled'
     end
+
+    describe 'Sad Path' do
+
+        it 'returns a error when we dont receive a ID of a sub within our database' do
+
+            params = {
+                subscription_id: 100000000000
+                }
+
+            post '/customer_subscriptions_cancel', params:params
+
+            expect(response.status).to eq 400
+            reply = JSON.parse(response.body, symbolize_names: true)
+            expect(reply[:error]).to eq "Unknown subscription."
+        end
+
+    end
 end
